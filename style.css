@@ -18,9 +18,9 @@ header {
 
 .jumbotron {
   /* background: linear-gradient(45deg, #ce0000, #ff3d3d, #c41c5c, #e73c7e); */
-  background: linear-gradient(45deg, #6d0000, #b42b2b, #c53c70, #df8aaa);
+  background: linear-gradient(45deg, #5f0000, #a01313, #db729a, #ecb3c9);
   background-size: 200% 200%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 8s ease infinite;
   height: 100vh;
 }
 
@@ -176,7 +176,7 @@ footer {
 }
 
 .light-1 {
-  transition: all 1.5s;
+  transition: all 1s;
   color: #f00000;
 }
 
@@ -184,6 +184,14 @@ footer {
   transition: all 0.5s;
   color: #fff;
   background-color: #ff1b1b;
+}
+
+.light-1:hover {
+  background-color: #202020;
+}
+
+.light-2:hover {
+  background-color: #770b0b;
 }
 
 /* Dark Mode */
