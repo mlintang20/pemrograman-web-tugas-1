@@ -272,3 +272,13 @@ footer {
     padding: 2rem 0.4rem 2.5rem;
   }
 }
+
+@media screen and (max-width: 380px) {
+  nav {
+    display: none;
+  }
+
+  #roadmap img {
+    width: 250px;
+  }
+}
