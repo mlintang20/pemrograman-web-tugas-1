@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+  /* background: linear-gradient(45deg, #ce0000, #ff3d3d, #c41c5c, #e73c7e); */
+  background: linear-gradient(45deg, #6d0000, #b42b2b, #c53c70, #df8aaa);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.jumbotron {
+  height: 91vh;
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.jumbotron img {
+  margin: 20px 0;
+  border-radius: 100%;
+  border: 10px solid #fff;
+}
+
+nav {
+  background-color: #ae0000;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  cursor: pointer;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem 8rem 2.5rem;
+}
+
+section > div:first-child {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0.5rem 0 1.5rem;
+}
+
+#about > div:last-child {
+  display: flex;
+}
+
+#about p {
+  flex: 50%;
+}
+
+#biodata > div:last-child {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem 0rem;
+}
+
+#biodata a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.its div,
+.smala div {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.its article,
+.smala article {
+  display: flex;
+  justify-content: center;
+}
+
+.its span,
+.smala span {
+  margin: 1.5rem 1rem 0;
+}
+
+#skills ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#roadmap .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.komik,
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.komik h2,
+.movie h2 {
+  margin: 0 0 1rem;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #ae0000;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card {
+  box-shadow: 0 10px 8px 5px rgba(170, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.card-2 {
+  box-shadow: 0 10px 8px 5px rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.light-1 {
+  transition: all 1.5s;
+  color: #f00000;
+}
+
+.light-2 {
+  transition: all 0.5s;
+  color: #fff;
+  background-color: #ff1b1b;
+}
+
+/* Dark Mode */
+.dark-1 {
+  background-color: #353535;
+}
+
+.dark-2 {
+  background-color: #770b0b;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .jumbotron img {
+    width: 250px;
+  }
+
+  #biodata > div:last-child {
+    grid-template-columns: auto;
+    gap: 1rem 0rem;
+  }
+
+  .its article,
+  .smala article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills ul {
+    grid-template-columns: auto auto;
+  }
+
+  #roadmap img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    font-size: 1rem;
+  }
+
+  .jumbotron img {
+    width: 200px;
+  }
+
+  section {
+    padding: 1rem 5rem 1.5rem;
+  }
+
+  section > div:first-child {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0.5rem 0 1rem;
+  }
+
+  #about > div:last-child {
+    flex-direction: column;
+  }
+
+  #about p {
+    margin-bottom: 1rem;
+  }
+
+  #skills ul {
+    grid-template-columns: auto;
+  }
+
+  .komik img,
+  .movie img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    padding: 2rem 0.4rem 2.5rem;
+  }
+}
